@@ -5,7 +5,7 @@ license-file:      LICENSE
 author:            Ricardo Boccato Alves
 maintainer:        Ricardo Boccato Alves
 synopsis:          Practice your Haskell programming skills.
-description:       Provides an environment to practice Haskell in an interactive TDD way.
+description:       Environment to practice Haskell in an interactive, TDD way.
 category:          Web
 stability:         Experimental
 cabal-version:     >= 1.8

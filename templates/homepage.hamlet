@@ -1,1 +1,12 @@
-<h1>_{MsgHello}
+<div #main-panel>
+
+<div #left-panel>
+<div #center-panel>
+<div #right-panel>
+
+<div #problem-list>Problem List
+<div #selected-problem>Find the last element of a list.
+<div #editor>
+<div #test-runner>2 out of 7 tests failed.
+<div #interpreter> Prelude&gt head [1, 2, 3]
+<footer>Time to build some muscles!

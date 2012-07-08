@@ -1,1 +1,32 @@
-function () {};
+$(function () {
+  
+  $('#left-panel'  ).css({'width': '20%'});
+  $('#center-panel').css({'width': '40%'});
+  $('#right-panel' ).css({'width': '40%'});
+
+  $('#selected-problem').css({'height': '10em'}); // 10 lines
+  $('#interpreter'     ).css({'height': '20em'}); // 20 lines
+
+  // If I set the width in the css, the layout() function cannot change those.
+  // $('#files').css({'width': '300px'});
+  stuff.layout('#main-panel', 'left', [
+    {id: 'left-panel'  , v_stretch: true},
+    {id: 'center-panel', v_stretch: true},
+    {id: 'right-panel' , v_stretch: true, h_stretch: true}]);
+
+  stuff.layout('#left-panel', 'top', [
+    {id: 'problem-list', v_stretch: true, h_stretch: true}]);
+
+  stuff.layout('#center-panel', 'top', [
+    {id: 'selected-problem', h_stretch: true},
+    {id: 'editor'          , h_stretch: true, v_stretch: true}]);
+
+  stuff.layout('#right-panel', 'bottom', [
+    {id: 'interpreter', h_stretch: true},
+    {id: 'test-runner', h_stretch: true, v_stretch: true}]);
+
+  var myCodeMirror = CodeMirror($('#editor').get()[0], {
+    value: "var a = new Code();\nvar f = function () {\n  return null;\n};"
+  });
+
+});

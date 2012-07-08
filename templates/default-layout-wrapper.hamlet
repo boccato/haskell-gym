@@ -22,12 +22,8 @@
         <script>
           document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'js');
     <body>
-        <div class="container">
-            <header>
-            <div id="main" role="main">
-              ^{pageBody pc}
-            <footer>
-                #{extraCopyright $ appExtra $ settings master}
+        <div id="main" role="main">
+          ^{pageBody pc}
 
         $maybe analytics <- extraAnalytics $ appExtra $ settings master
             <script>

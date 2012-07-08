@@ -1,3 +1,32 @@
-h1 {
-    text-align: center
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+}
+
+#main-panel {
+  position: absolute;
+  top: 2px;
+  bottom: 1.5em;
+  left: 2px;
+  right: 2px;
+}
+
+#main-panel > div {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.CodeMirror {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.CodeMirror-scroll {
+  height: 99%;
 }

@@ -11,4 +11,4 @@ homeSpecs =
     it "loads the index and checks it looks right" $ do
       get_ "/"
       statusIs 200
-      htmlAllContain "h1" "Hello"
+      htmlAllContain "footer" "muscles"
